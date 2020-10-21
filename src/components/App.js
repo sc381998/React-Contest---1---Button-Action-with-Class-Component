@@ -21,7 +21,7 @@ class App extends Component {
         <button id="click" onClick={this.handleClick}>
           click
         </button>
-        <p id={this.state.id}>{this.state.para}</p>
+        {this.state.id && <p id={this.state.id}>{this.state.para}</p>}
       </div>
     );
   }
