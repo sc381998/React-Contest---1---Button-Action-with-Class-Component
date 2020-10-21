@@ -6,10 +6,6 @@ class App extends Component {
     super(props);
     this.state = { id: "", para: "" };
   }
-  // useState = {
-  //   id: "",
-  //   para: ""
-  // };
 
   handleClick = () => {
     this.setState({
@@ -22,8 +18,10 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        <button onClick={this.handleClick}>Click</button>
-        <p id={this.useState.id}>{this.useState.para}</p>
+        <button id="click" onClick={this.handleClick}>
+          click
+        </button>
+        <p id={this.state.id}>{this.state.para}</p>
       </div>
     );
   }
