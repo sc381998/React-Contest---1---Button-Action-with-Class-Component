@@ -7,15 +7,16 @@ class App extends Component {
     this.state = { id: "", para: "" };
   }
 
-  handleClick = () => {
+  handleClick() {
     this.setState({
       id: "para",
       para:
         "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
     });
-  };
+  }
 
   render() {
+    // console.log("sagar");
     return (
       <div id="main">
         <button id="click" onClick={this.handleClick}>
