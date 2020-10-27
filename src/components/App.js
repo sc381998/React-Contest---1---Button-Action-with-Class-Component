@@ -4,12 +4,13 @@ import "../styles/App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { para: "" };
+    this.state = { id: "", para: "" };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
     const newState = {
+      id: "para",
       para:
         "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
     };
@@ -25,7 +26,7 @@ class App extends Component {
           click
         </button>
 
-        {this.state.para && <p>{this.state.para}</p>}
+        {this.state.id && <p id={this.state.id}>{this.state.para}</p>}
       </div>
     );
   }
